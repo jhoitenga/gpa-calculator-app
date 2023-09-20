@@ -1,0 +1,17 @@
+/*
+ * Title: base-layout.component.css
+ * Author: Jennifer Hoitenga
+ * Date: September 13, 2023
+ * Sources Used:
+ * Angular Tutorial for Beginners: Layout Pages video by Professor Krasso (https://www.youtube.com/watch?v=9AsogopS9YM)
+*/
+
+.logo {
+  margin-top: 5px;
+}
+
+.main-container {
+  padding-top: 25px;
+  width: 80%;
+  margin: 0 auto;
+}

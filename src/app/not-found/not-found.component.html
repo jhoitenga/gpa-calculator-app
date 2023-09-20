@@ -1,0 +1,29 @@
+<!--
+ * Title: not-found.component.html
+ * Author: Jennifer Hoitenga
+ * Date: September 13, 2023
+ * Sources Used:
+ * Angular Tutorial for Beginners: Layout Pages video by Professor Krasso (https://www.youtube.com/watch?v=9AsogopS9YM)
+-->
+
+<div fxLayout="column" fxLayoutAlign="center center">
+  <!-- Create a column layout and center its children both horizontally and vertically -->
+  <mat-card fxFlex class="mat-elevation-z0">
+    <mat-card-title>
+      <img src="./assets/not-found.png" />
+    </mat-card-title>
+    <mat-card-content style="text-align: center">
+      <!-- Display a message -->
+      <h2>Sorry, the page you are looking for cannot be found.</h2>
+      <!-- Create a button with custom class for larger size with a router link to the home page -->
+      <button
+        class="large-button"
+        mat-raised-button
+        color="accent"
+        routerLink="/"
+      >
+        Return Home
+      </button>
+    </mat-card-content>
+  </mat-card>
+</div>

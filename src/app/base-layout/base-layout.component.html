@@ -1,0 +1,39 @@
+<!--
+ * Title: base-layout.component.html
+ * Author: Jennifer Hoitenga
+ * Date: September 20, 2023
+ * Sources Used:
+ * Angular Tutorial for Beginners: Layout Pages video by Professor Krasso (https://www.youtube.com/watch?v=9AsogopS9YM)
+ * Angular Tutorial for Beginners: Reactive Forms video by Professor Krasso (https://www.youtube.com/watch?v=OFBL4bKno_s)
+-->
+
+<!-- Material Toolbar component with a primary color -->
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <div class="logo"></div>
+    <img src="./assets/gpa-calculator-app.png" height="80" />
+    <div style="width: 80%">
+      <div fxLayout="row wrap" fxLayoutAlign="end start">
+        <!-- Button with a router link to the home page -->
+        <button mat-button routerLink="/">Home</button>
+        <!-- Button for signing out the user when clicked. -->
+        <button mat-button (click)="signOut()">Sign Out</button>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<br />
+<div fxLayout="row wrap">
+  <div fxFlex>
+    <mat-card class="main-container mat-elevation-z0">
+      <!-- Display a dynamic assignment title -->
+      <mat-card-title>{{ assignment }} </mat-card-title>
+      <br /><br />
+      <mat-card-content>
+        <!-- Router outlet to display routed content -->
+        <router-outlet></router-outlet>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

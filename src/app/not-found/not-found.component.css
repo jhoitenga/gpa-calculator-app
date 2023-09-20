@@ -1,0 +1,12 @@
+/*
+ * Title: not-found.component.css
+ * Author: Jennifer Hoitenga
+ * Date: September 13, 2023
+ * Sources Used:
+ * Angular Tutorial for Beginners: Layout Pages video by Professor Krasso (https://www.youtube.com/watch?v=9AsogopS9YM)
+*/
+
+.large-button {
+  font-size: 20px; /* Increase the font size */
+  padding: 16px 24px; /* Adjust the padding to increase the button size */
+}
